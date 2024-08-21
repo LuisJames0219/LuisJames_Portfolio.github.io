@@ -196,30 +196,30 @@ section {
 .section__pic-container::before {
   content: "";
   position: absolute;
-  bottom: -30px; /* Adjust based on how far below you want the reflection */
+  bottom: -30px; 
   left: 0;
   width: 100%;
-  height: 100%; /* Same size as the profile picture */
+  height: 100%; 
   background: url('./assets/ProfilePic01.jpg') no-repeat center;
   background-size: cover;
   border-radius: 50%;
-  opacity: 0.3; /* Adjust the opacity of the reflection */
+  opacity: 0.3; 
   transform: scaleY(-1);
   filter: blur(4px);
   z-index: -1;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.3); /* Optional: adds a subtle shadow for more realism */
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
 }
 
 .section__pic-container::after {
   content: "";
   position: absolute;
-  bottom: -30px; /* Adjust to match the `::before` element */
+  bottom: -30px;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.1) 100%);
-  opacity: 0.5; /* Adjust to control the strength of the reflection's gradient */
+  opacity: 0.5; 
   pointer-events: none;
 }
 
