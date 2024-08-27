@@ -41,3 +41,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   type(); // Start typing effect on page load
 });
+
+function showCategory(category) {
+  const categories = document.querySelectorAll('.project-category');
+  categories.forEach(cat => {
+    if (cat.id === `${category}-projects`) {
+      cat.style.display = 'block';
+    } else {
+      cat.style.display = 'none';
+    }
+  });
+}
+
+// Optionally, you could add some initialization if you want a specific category to be displayed by default.
+document.addEventListener('DOMContentLoaded', () => {
+  showCategory('web'); // Default to showing web projects
+});
