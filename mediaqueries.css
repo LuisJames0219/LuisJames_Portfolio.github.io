@@ -103,4 +103,20 @@
   .text-container {
     text-align: justify;
   }
+
+  .about-containers {
+    display: flex;
+    flex-direction: column; /* Stack the containers vertically */
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+  }
+  .details-container-tools {
+    width: 280px;
+  }
+  .details-container, .details-container-color-container {
+    width: 100%; /* Make each container take the full width */
+    min-height: 180px; /* Maintain consistent height */
+    box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
+    margin-bottom: 1rem; /* Add space between the containers */
+  }
 }
